@@ -1,0 +1,700 @@
+/*Global Tag*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather/');
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 1080px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+
+/* Classes */
+
+.about-body {
+    background-color: whitesmoke;
+}
+
+.about-header {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/wine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: center;
+}
+
+.about-h {
+    color: rgb(231, 118, 25);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-h2 {
+    color: rgb(231, 118, 25);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.about-p {
+    color: green;
+}
+
+.about-hr {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+}
+
+.aboutus-header {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.about-section-row {
+    width: 50%;
+    height: 400px;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-img {
+    width: 250px;
+    height: 370px;
+    float: left;
+    margin-right: 30px;
+}
+
+.about-img1 {
+    width: 250px;
+    height: 370px;
+    float: right;
+    margin-left: 30px;
+}
+
+.about-img2 {
+    width: 250px;
+    height: 370px;
+    float: left;
+    margin-right: 30px;
+}
+
+.billing-tbl {
+    width: 900px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.checkout-btn {
+    background-color: rgb(197, 91, 4, 0.9);
+    color: rgb(71, 192, 34);
+    text-shadow: 0 0 5px black;
+    font-family: Pacifico;
+    font-size: 20px;
+    border: none;
+    padding: 25px 75px 25px 75px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.checkout-btn:hover {
+    transition-duration: 1s;
+    background-color: rgba(55, 161, 23, 0.9);
+    color: rgb(231, 118, 25);
+}
+
+.checkout-header {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/checkout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: center;
+}
+
+.checkout-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.contactus-header {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .20)), url("../images/bar5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: center;
+}
+
+.contactus-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 70px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.contact-address{
+    text-align: center;
+}
+
+.contactus-body{
+    height: 700px;
+    width: 100%;
+}
+
+.contact-form-info {
+    margin-top: 30px;
+    background-color: white;
+    width: 70%;
+}
+
+
+.contact-form-info2 {
+    margin-left: 20px;
+    border: 1px solid darkgrey;
+    text-align: center;
+}
+
+.contact-form-text {
+    padding-top: 10px;
+}
+
+.contact-form-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form-input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    cursor: default;
+}
+
+.contact-form-input:hover {
+    border-bottom: 2px solid #13df13;
+    transition-duration: 0.5s;
+}
+
+.contact-form-textbox {
+    width: 80%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    cursor: default;
+}
+
+.contact-form-textbox:hover {
+    border-bottom: 2px solid #13df13;
+    transition-duration: 0.5s;
+}
+
+.contact-map{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.contact-left{
+    width: 80%;
+}
+
+.emp-body {
+    margin-left: 200px;
+}
+
+.emp-header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/shopcart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.emp-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.event-body {
+    margin-left: 200px;
+    margin-top: 20px
+}
+
+.event-header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/shopcart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.event-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.footer {
+    background-color: rgb(43, 43, 43);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-nav {
+    padding-top: 20px;
+}
+
+.footer-nav-text {
+    color: rgb(231, 118, 25);
+}
+
+.footer-nav a:link {
+    text-decoration: none;
+    color: green;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    transition-duration: 1s;
+    color: black;
+    background-color: rgb(231, 118, 25);
+}
+
+.footer-nav a:visited {
+    text-decoration: none;
+    color: green;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.footer-comp {
+    color: green;
+}
+
+.footer-company {
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(231, 118, 25);
+}
+
+.footer-text {
+    color: green;
+}
+
+.footer-hr {
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headers {
+    text-align: center;
+    padding-top: 85px;
+}
+
+.headerss {
+    text-align: center;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/stockvault-bar-glasses186850.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    color: rgb(231, 118, 25);
+}
+
+.img-row {
+    width: 200px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.img-responsive {
+    width: 200px;
+    height: 200px;
+}
+
+.index-header {
+    font-family: Merriweather;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.inv-header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/order.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.inv-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.inq-header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/order.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.inq-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.items {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 360px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.left-nav {
+    float: left;
+    width: 500px;
+    height: 100px;
+}
+
+.menu-btn {
+    background-color: rgb(197, 91, 4, 0.9);
+    color: rgb(71, 192, 34);
+    text-shadow: 0 0 5px black;
+    font-family: Pacifico;
+    font-size: 20px;
+    border: none;
+    padding: 25px 75px 25px 75px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.menu-btn:hover {
+    transition-duration: 1s;
+    background-color: rgba(55, 161, 23, 0.9);
+    color: rgb(231, 118, 25);
+}
+
+.menu-header {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/booze.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: center;
+}
+
+.menu-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.menu-title {
+    font-family: Merriweather;
+    color: rgb(231, 118, 25);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav-bar a:visited {
+    text-decoration: none;
+    color: rgb(231, 118, 25);
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-bar a:link {
+    text-decoration: none;
+    color: rgb(231, 118, 25);
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-bar a:hover {
+    transition-duration: 1s;
+    color: black;
+    background-color: rgb(231, 118, 25);
+    border: none;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    color: rgb(231, 118, 25);
+    margin-bottom: 100px;
+}
+
+.nav-text {
+    font-size: 40px;
+    font-family: Pacifico;
+}
+
+.order-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/order.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.order-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.order-info-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/order.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.order-info-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.product-title {
+    color: rgb(231, 118, 25);
+    text-shadow: 0 0 5px black;
+    font-size: 35px;
+    font-family: Merriweather;
+    font-weight: bold;
+}
+
+.product-row:hover .Test-t {
+    visibility: visible;
+}
+
+.product-row:hover .Test-tt {
+    filter: brightness(30%);
+}
+
+.product-row {
+    float: left;
+    margin-left: 50px;
+    color: rgb(231, 118, 25);
+    text-shadow: 0 0 5px black;
+    font-size: 30px;
+    font-family: Merriweather;
+    font-weight: bold;
+    position: relative;
+}
+
+.product-row h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.right-nav {
+    float: right;
+    margin-top: 15px;
+}
+
+.side-links {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.seperator-div {
+    padding-bottom: 100px;
+}
+
+.shop-cart {
+    width: 25px;
+    height: 25px;
+}
+
+.shopcart-body {
+    padding-top: 20px;
+}
+
+.shopcart-h {
+    color: rgb(231, 118, 25);
+    text-align: center;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.shopcart-header {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/shopcart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: center;
+}
+
+.shopcart-hdr {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.spacer-div {
+    margin-top: 20px;
+}
+
+.socials {
+    font-size: 30px;
+}
+
+
+/*
+    transform: scale(1.5);
+}
+*/
+
+.Test-t {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 2px black;
+    visibility: hidden;
+}
+
+.textbox {
+    width: 1000px;
+}
+
+.welcome-btn {
+    background-color: rgb(197, 91, 4, 0.9);
+    color: rgb(71, 192, 34);
+    text-shadow: 0 0 5px black;
+    font-family: Pacifico;
+    font-size: 20px;
+    border: none;
+    padding: 25px 75px 25px 75px;
+    border-radius: 50px;
+}
+
+.welcome-btn:hover {
+    transition-duration: 1s;
+    background-color: rgba(55, 161, 23, 0.9);
+    color: rgb(231, 118, 25);
+}

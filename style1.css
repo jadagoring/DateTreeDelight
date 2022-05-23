@@ -1,0 +1,579 @@
+
+/* default style */
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Playfair Display', serif;
+	font-size:14px;
+	letter-spacing:1;
+	list-style:none;
+	text-decoration:none;
+	outline:none;
+}
+
+@media(max-width:600px){
+	.h-links{display:none}
+	.links{display:none}
+	.logo-svg{display:none;}
+}
+@media (min-width:600px){
+	.SVG{display:none;}
+
+}
+/* Using media to make the font bigger or smaller depending the size of the screen  */
+
+@media (min-width:1200px){
+	.header-item h1{
+		font-size:3em;
+	}
+}
+@media (min-width:800px){
+	.header-item h1{
+		font-size:2em;
+	}
+}
+
+@media (max-width:600px){
+	.header-item h1{
+		font-size:1em;
+	}
+}
+
+/* Global Tags */
+	header{
+		height:22vh;
+		background-color:#2d545e;
+	}
+
+	h1{
+		text-align: center;
+	}
+	main{
+		height:80vh;
+	}
+	section{
+		height:40vh;
+		background-color: #a77c50;
+	}
+	footer{
+		height:10vh;
+		background-color:#2d545e;
+
+	}
+
+ /* Classes */
+ .about-section-row{
+	 width: 50%;
+	 margin: 100px auto 100px auto;
+	 text-align: left;
+ }
+
+ .who-are-we-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.values-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+	/* container for the header */
+	.flex-container{
+		display:grid;
+		grid-template-row:1fr 1fr;
+	}
+	/* Styling for the Name of the company in the header */
+	.logo{
+		font-family: 'Dancing Script', cursive;
+		font-weight:bold;
+		margin-top:15px;
+		color:white;
+		text-align:center;
+
+	}
+	.logo p{
+		font-size:3em;
+		margin-bottom:10px;
+	}
+	/* Header links  */
+	.header-links{
+		text-align:center;
+		margin-top:20px;
+		}
+	/* the link outside the side bar styling  */
+	.h-links{
+		padding:10px 20px;
+		border-radius:5px;
+		margin-right:5%;
+		color:White;
+		font-size:1em;
+		transition:1s ease;
+	}
+	.h-links:hover{
+		color:#2d545e;
+		background:white;
+		font-weight:bold;
+
+
+	}
+	.links{
+		padding:10px 10px;
+		border-radius:5px;
+		margin-right:1%;
+		color:White;
+		font-size:1em;
+		transition:1s ease;
+	}
+	.links:hover{
+		color:#2d545e;
+		background:white;
+		font-weight:bold;
+	}
+
+	/* Side Bar */
+	.SVG{
+		text-align:center;
+	}
+	.side-nav{
+		height:100%;
+		width:0;
+		background: #2d545e;
+		position:fixed;
+		z-index:1;
+		top:0;
+		left:0;
+		overflow-x:hidden;
+		padding-top:60px;
+		transition:0.6s;
+	}
+	/* the link inside the sidebar */
+	.side-links{
+		display:block;
+		padding:10px 10px 10px 30px;
+		transition:0.2s;
+		text-decoration:none;
+		color:white;
+	}
+	.side-links:hover{
+		color:#2d545e;
+		background:white;
+	}
+	/* the close in the sidebar */
+	.btn-close{
+		position: absolute;
+		top:0;
+		right:14px;
+		font-size:2em;
+		transform:rotate(45deg);
+		cursor:pointer;
+		padding:0px;
+		color:white;
+	}
+
+	/* The card for the persons info  */
+
+	.card{
+		margin-top:20px;
+		display:grid;
+		align-items:center;
+		justify-content:center;
+
+	}
+	.card-img{
+		padding-left:20px;
+
+	}
+	.card-info{
+		line-height:2em;
+
+	}
+	.card-info h1{
+		font-size:1.5em;
+		font-size:bold;
+	}
+	.card-button{
+		text-transform:uppercase;
+		padding:5px 40px 5px 40px;
+		background:#12343b;
+		color:white;
+		border:none;
+		transition:1s ease;
+		border-radius:5px;
+	}
+
+	.card-button:hover{
+		background:white;
+		color:#12343b;
+
+	}
+	.select-style{
+		background:white;
+		outline:none;
+		border:none;
+		margin:8%;
+		font-weight:bold;
+		font-size:1.2em;
+
+	}
+	/* Main Section */
+	#main{
+		transition:margin-left 0.5s;
+		padding:20px;
+		overflow:hidden;
+		width:100%;
+	}
+
+
+
+	/*  positioning the login in  the center  */
+
+	.Sign-In-Main{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		text-align:center;
+	}
+
+	/* Styling the items  */
+	.Sign-In-Main p{
+		margin-bottom:40px;
+	}
+
+	.Button{
+		background: #2d545e;
+		padding: 10px 15px;
+		color:white;
+		font-weight:bold;
+		text-transform:uppercase;
+		border-radius:10px;
+		box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+		transition:1s ease;
+	}
+
+	.Button:hover{
+
+		background:white;
+		color: #2d545e;
+	}
+
+
+		/* The following code is for allowing my image to have a hoovering effect */
+		.grid-template{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		}
+		#boxsize{
+		margin:15px auto 0;
+		padding-bottom:20px;
+		padding-left:5px;
+		padding-right:0;
+		margin-left:30px;
+
+		}
+		/* Each box`s size */
+
+		#boxsize .box {
+		position:relative;
+		height:200px;
+		width:250px;
+		box-sizing:border-box;
+		display:inline-block;
+
+	}
+
+		#boxsize .box .imageBox {
+		position:relative;
+		overflow:hidden;
+	}
+		/* for the image */
+		#boxsize .box .imageBox img {
+		width:100%;
+		transition: transform 2s;
+		border-radius:15px;
+
+	}
+
+		#boxsize .box:hover .imageBox img {
+		transform: scale(1.2);
+
+	}
+		/* for the info */
+		#boxsize .box .info {
+		position:absolute;
+		top:10px;
+		left:10px;
+		bottom:10px;
+		right:10px;
+		background-color:rgba(0,0,0,.6);
+		transform:scaleX(0);
+		transition: transform .5s;
+	}
+		#boxsize .box:hover .info {
+
+		 transform:scaleX(1);
+	 }
+
+		#boxsize .box .info .amount {
+		position:relative;
+		top:50%;
+		transform: translateY(-50%);
+		text-align:center;
+		padding:15px;
+		color:white;
+	}
+
+/* this deals with the image placement in the product listing section  */
+	.B-item{
+		height:200px;
+		width:250px;
+
+	}
+
+	/* product listing heading  */
+	.product-listing h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2em;
+	font-weight:bold;
+	text-align:center;
+	}
+
+	/* footer styling */
+	footer p{
+		padding-top:20px;
+		Color:white;
+		text-align:center;
+		font-size:1em;
+	}
+	footer .Company{
+
+		font-style:italic;
+		font-size:1.5em;
+		font-family: 'Dancing Script', cursive;
+	}
+
+	/* SlideShow  */
+	/* intro{
+		height:50vh;
+		width:100vw;
+		position:relative;
+	}*/
+	.slideshow-img{
+		position: absolute;
+		width:100%;
+		height:80vh;
+		object-fit:cover;
+
+	}
+	/*
+	 Advertising section
+	.Event-info{
+		display:none;
+
+	}
+
+	.image-card:hover .Event-info{
+		display:block;
+		position:absolute;
+		width:25%;
+		height:80vh;
+		background:rgba(0,0,0,0.5);
+		color:white;
+
+	}
+	 */
+	.header-welcome{
+		position:absolute;
+		width:100%;
+		height:80vh;
+		background:rgba(0,0,0,0.8);
+		color:white;
+		display:table;
+
+	}
+
+	.header-item{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	text-align:center;
+
+	}
+
+	.header-item h1{
+		/* font-size:2.5em; */
+		font-weight:bolder;
+
+	}
+
+	/* Login screen styling */
+	#container1{
+		box-sizing:border-box;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+	}
+
+	h1{
+		font-weight:bold;
+		font-size:2em;
+	}
+	p{
+		font-weight:100;
+		line-height:15px;
+		margin:20px 0 30px;
+	}
+	.container{
+		background:white;
+		border-radius: 10px;
+		box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+		position:relative;
+		overflow:hidden;
+		width:768px;
+		max-width:100%;
+		min-height:480px;
+	}
+	.form-container form{
+		background:white;
+		display:flex;
+		flex-direction:column;
+		padding:0 50px;
+		height:100%;
+		align-items:center;
+		text-align:center;
+
+	}
+		.form-container input{
+			background:#eee;
+			border:none;
+			padding: 12px 15px;
+			margin:8px 0;
+			width:100%;
+		}
+
+	button{
+		border-radius:20px;
+		border: 1px solid white;
+
+		background:#215a77;
+		color:white;
+		font-weight:bold;
+		padding: 12px 45px;
+		text-transform:uppercase;
+		transition: transform 80ms ease-in;
+	}
+	button:active{
+		transform:scale(0.95);
+	}
+
+	button.ghost{
+		background:transparent;
+		border-color:white;
+
+	}
+	.form-container{
+		position:absolute;
+		top:0;
+		height:100%;
+		transition:all 0.6s ease-in-out;
+	}
+	.sign-in-container{
+		top:22vh;
+		left:0;
+		width:50%;
+		z-index:2;
+
+	}
+	.sign-up-container{
+		left:0;
+		width:50%;
+		opacity:0;
+		z-index:1;
+
+	}
+	.overlay-container{
+		position:absolute;
+		top:0;
+		left:50%;
+		width:50%;
+		height:100%;
+		overflow: hidden;
+		transition: transform 0.6s ease-in-out;
+		z-index:100;
+	}
+	.overlay{
+		/* Background= the background that moves from sign in to sign up */
+		background:linear-gradient(to right,#215a77,#379683,#47d858) no-repeat 0 0 / cover;
+		color:white;
+		position:relative;
+		left:-100%;
+		height:100%;
+		width:200%;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
+
+
+	}
+	.overlay-panel{
+		position:absolute;
+		top:0;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+		/* padding:0 40px; */
+		height:100%;
+		width:50%;
+		text-align:center;
+		transform:translateX(0);
+		transistion:0.6s ease-in-out;
+
+
+	}
+	.overlay-right{
+		right:0;
+		transform: translateX(0%);
+	}
+
+	.overlay-left{
+		transform: translateX(-20%);
+
+	}
+
+	/* AAnimation for the login screen */
+
+	/* This is to move the sign in to the right */
+	.right-panel-active .sign-in-container{
+		transform:translateX(100%);
+	}
+	/* Move the overlay to the left  */
+	.right-panel-active .overlay-container{
+		transform:translateX(-100%);
+
+	}
+	/* Bringing the sign up over the sign in form */
+	.right-panel-active .sign-up-container{
+		transform:translateX(100%);
+		opacity:1;
+		z-index:5;
+	}
+	/* Moving the overlay back to the right */
+	.right-panel-active .overlay{
+		transform:translateX(50%);
+	}
+
+	.right-panel-active .overlay-left{
+		transform: translateX(0);
+	}
+	.right-panel-active .overlay-right{
+		transform: translateX(20%);
+	}
+	/* Vadilation error styling 	*/
+	#Password_error{
+		color:red;
+	}

@@ -1,0 +1,57 @@
+<html>
+<title> Login </title>
+<link rel="stylesheet" href="style1.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis|Playfair+Display|Shadows+Into+Light|Source+Code+Pro|Source+Serif+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<script src="Js/script.js" defer></script>
+<body>
+	<div id="container1">
+		<div id="container" class="container">
+			<div class="form-container sign-up-container">
+				<form action="signup.php" method="post" onsubmit="return Validation()" id="SignUp_Form">
+					
+					<h1> Create An Account </h1>
+					<input type="text" name="FirstName" placeholder="First Name" id="FirstName" />
+					<input type="text" name="LastName" placeholder="Last Name" id="LastName" />
+					<input type="text" name="Email" placeholder="Email@email.com"  id="Email"/> 
+					<input type="text" name="Username" placeholder="Username"  id="Username"/>
+					<input type="password" name="Password" placeholder="Password"  id="Password"/>
+					<input type="password" name="VPassword" placeholder="Verify Password" id="VPassword"/>
+					<div id="Password_error"></div>
+					<button>Sign Up</button>
+					
+				</form>
+			</div>
+			<div class="form-container sign-in-container">
+				<form action="login.php" method="post">
+					<h1>Sign In</h1>
+					<input type="text" name="Username" Placeholder="Username" required/>
+					<input type="password" name="Password"  Placeholder="Password" required/>
+						<select name="Occupation" class="select-style">
+						<option value="Customer">Customer</option>
+						<option value="Employee">Employee</option>
+						<option value="Owner">Owner</option>
+						</select>
+					<button> Sign In</button>
+				
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>Welcome Back!</h1>
+						<p> Would you like to sign in</p>
+						<button class="ghost" id="signIn"> Sign In </button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>Welcome </h1>
+						<p> Would you like to create an account? </p>
+						<button class="ghost" id="signUp"> Sign Up </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
